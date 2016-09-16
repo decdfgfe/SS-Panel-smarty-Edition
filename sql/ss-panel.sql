@@ -160,6 +160,10 @@ CREATE TABLE `ss_node` (
   `protocol` varchar(2048) DEFAULT NULL,
   `obfs` varchar(2048) DEFAULT NULL,
   `parameter` varchar(2048) DEFAULT NULL,
+  `load_1` varchar(15) DEFAULT NULL,
+  `cpu` varchar(15) DEFAULT NULL,
+  `upload` varchar(15) DEFAULT NULL,
+  `download` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
