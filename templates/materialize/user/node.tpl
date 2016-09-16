@@ -83,10 +83,10 @@
 																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR加密协议：<{$row['protocol']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希方式：<{$row['obfs']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混淆方式：<{$row['obfs']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希参数：<{$row['parameter']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混淆参数：<{$row['parameter']}></a>
 																</li>
 															</ul>
 														</li>
