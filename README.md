@@ -18,6 +18,9 @@ Please edit the file `/lib/config-sample.php` upon your own need, when you finis
 Please make sure that `lib/Ss` has the permission to read & write. If not, please set it for convenience. <br/>
 请确保目录 `lib/Ss` 有读写权限，如果没有请改一下。
 
+Add SSR support, when the node is added if the agreement and confusion for the original or not, then the output SS two-dimensional code. <br/>
+添加SSR支持，添加节点时若协议和混淆为原版或不填写，则输出SS二维码。
+
 ========
 ### AdminSystem 
 
