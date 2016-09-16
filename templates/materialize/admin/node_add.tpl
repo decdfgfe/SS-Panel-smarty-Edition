@@ -66,7 +66,7 @@
 										<input class="form-control" id="protocol" type="text" value="<{$rs['protocol']}>">
 									</div>
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="obfs">加密方式(SSR特性)</label>
+										<label class="floating-label" for="obfs">混淆方式(SSR特性)</label>
 										<input class="form-control" id="obfs" type="text" value="<{$rs['obfs']}>">
 									</div>
 									<div class="form-group form-group-label">
