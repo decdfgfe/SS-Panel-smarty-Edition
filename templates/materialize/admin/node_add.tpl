@@ -70,7 +70,7 @@
 										<input class="form-control" id="obfs" type="text" value="<{$rs['obfs']}>">
 									</div>
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="parameter">混希参数(SSR特性)</label>
+										<label class="floating-label" for="parameter">混淆参数(SSR特性)</label>
 										<input class="form-control" id="parameter" type="text" value="<{$rs['parameter']}>">
 									</div>
 									
