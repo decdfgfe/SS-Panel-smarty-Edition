@@ -77,16 +77,19 @@
 																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;伺服器状态：<{$row['node_status']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器加密方式：<{$row['node_method']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密方式：<{$row['node_method']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR加密协议：<{$row['protocol']}></a>
+																    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混淆方式：<{$row['obfs']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混淆参数：<{$row['parameter']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
+																</li>
+																<li>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
 																</li>
 															</ul>
 														</li>
@@ -101,7 +104,6 @@
 													</ul>
 												</div>
 												<div class="card-action text-center" style="min-height:15px;">
-														<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">person</i>&nbsp;在线:&nbsp;<span id="<{$row['id']}>_connections"><{$row['connections']}></span></small></div>
 													<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">data_usage</i>&nbsp;负载:&nbsp;<span id="<{$row['id']}>_load"><{$row['load_1']}></span></small></div>
 													<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">graphic_eq</i>&nbsp;CPU:&nbsp;<span id="<{$row['id']}>_cpu"><{$row['cpu']}></span></small></div>
 													<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">trending_up</i>&nbsp;上行:&nbsp;<span id="<{$row['id']}>_upload"><{$row['upload']}></span></small></div>
@@ -167,16 +169,18 @@
 																	<li>
 																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器加密方式：<{$row['node_method']}></a>
 																	</li>
-																	<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR加密协议：<{$row['protocol']}></a>
-																</li>
-																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希方式：<{$row['obfs']}></a>
-																</li>
-																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希参数：<{$row['parameter']}></a>
-																</li>
-																	
+															        	<li>
+															        	    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
+															        	</li>
+															      		<li>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
+															        	</li>
+															        	<li>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
+															        	</li>
+														        		<li>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
+														        		</li>
 																</ul>
 															</li>
 														</ul>
@@ -190,7 +194,6 @@
 														</ul>
 													</div>
 													<div class="card-action text-center" style="min-height:15px;">
-													<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">person</i>&nbsp;在线:&nbsp;<span id="<{$row['id']}>_connections"><{$row['connections']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">data_usage</i>&nbsp;负载:&nbsp;<span id="<{$row['id']}>_load"><{$row['load_1']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">graphic_eq</i>&nbsp;CPU:&nbsp;<span id="<{$row['id']}>_cpu"><{$row['cpu']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">trending_up</i>&nbsp;上行:&nbsp;<span id="<{$row['id']}>_upload"><{$row['upload']}></span></small></div>
@@ -228,15 +231,18 @@
 																	<li>
 																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器加密方式：<i class="icon icon-lg">visibility_off</i></a>
 																	</li>
+															        	<li>
+															        	    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
+															        	</li>
 																	<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR加密协议：<{$row['protocol']}></a>
-																</li>
-																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希方式：<{$row['obfs']}></a>
-																</li>
-																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;伺服器SSR混希参数：<{$row['parameter']}></a>
-																</li>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
+															        	</li>
+															        	<li>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混希方式：<{$row['obfs']}></a>
+															        	</li>
+															        	<li>
+																            <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混希参数：<{$row['parameter']}></a>
+															        	</li>
 																</ul>
 															</li>
 														</ul>
@@ -254,7 +260,6 @@
 														</ul>
 													</div>
 													<div class="card-action text-center" style="min-height:15px;">
-													<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3"><small><i class="icon icon-lg">person</i>&nbsp;在线:&nbsp;<span id="<{$row['id']}>_connections"><{$row['connections']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">data_usage</i>&nbsp;负载:&nbsp;<span id="<{$row['id']}>_load"><{$row['load_1']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">graphic_eq</i>&nbsp;CPU:&nbsp;<span id="<{$row['id']}>_cpu"><{$row['cpu']}></span></small></div>
 														<div class="col-lg-3 col-md-3 col-sm-6 col-xl-12"><small><i class="icon icon-lg">trending_up</i>&nbsp;上行:&nbsp;<span id="<{$row['id']}>_upload"><{$row['upload']}></span></small></div>
@@ -408,8 +413,6 @@ p = new Ping();
                     $('#'+e['node_id']+'_cpu').html(e['cpu']==null?'<s>无数据</s>':e['cpu'])
                     $('#'+e['node_id']+'_upload').html(e['upload']==null?'<s>无数据</s>':e['upload'])
                     $('#'+e['node_id']+'_download').html(e['download']==null?'<s>无数据</s>':e['download'])
-
-$('#'+e['node_id']+'_connections').html(e['connections']==null?'<s>无数据</s>':e['connections'])
                 });
                 setTimeout(get_node_info,3000);
             },
