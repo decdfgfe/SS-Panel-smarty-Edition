@@ -42,7 +42,7 @@
 												<th>加密</th>
 												<th>描述</th>
 												<th>协议(SSR特性)</th>
-												<th>方式(SSR特性)</th>
+												<th>混淆(SSR特性)</th>
 												<th>参数(SSR特性)</th>
 												<th>排序</th>
 												<th>操作</th>
