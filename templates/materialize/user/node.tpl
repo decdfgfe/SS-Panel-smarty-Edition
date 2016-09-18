@@ -83,13 +83,13 @@
 																    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">gesture</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">mode_edit</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
 																</li>
 															</ul>
 														</li>
@@ -173,13 +173,13 @@
 															        	    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
 															        	</li>
 															      		<li>
-															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
 															        	</li>
 															        	<li>
-															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">gesture</i>&nbsp;SSR混淆方式：<{$row['obfs']}></a>
 															        	</li>
 														        		<li>
-															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">mode_edit</i>&nbsp;SSR混淆参数：<{$row['parameter']}></a>
 														        		</li>
 																</ul>
 															</li>
@@ -235,13 +235,13 @@
 															        	    <a class="waves-attach" href="javascript:void(0)">&nbsp;以下选项若空白则为原版</a>
 															        	</li>
 																	<li>
-															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR加密协议：<{$row['protocol']}></a>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;SSR加密协议：<i class="icon icon-lg">visibility_off</i></a>
 															        	</li>
 															        	<li>
-															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混希方式：<{$row['obfs']}></a>
+															        	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">gesture</i>&nbsp;SSR混淆方式：<i class="icon icon-lg">visibility_off</i></a>
 															        	</li>
 															        	<li>
-																            <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;SSR混希参数：<{$row['parameter']}></a>
+																            <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">mode_edit</i>&nbsp;SSR混淆参数：<i class="icon icon-lg">visibility_off</i></a>
 															        	</li>
 																</ul>
 															</li>
