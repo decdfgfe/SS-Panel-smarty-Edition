@@ -74,7 +74,7 @@
 					<div class="card-inner margin-bottom-no">
 						<div class="card-table">
 							<div class="table-responsive">
-								<table class="table table_no dataTable" id="user" title="Node List">
+								<table class="table table_no dataTable" id="user" title="User List">
 									<thead>
 										<tr>
 											<th>ID</th>
