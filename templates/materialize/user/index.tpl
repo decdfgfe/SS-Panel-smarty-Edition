@@ -125,7 +125,7 @@
 									<div class="text-center">
 										<p class="card-heading"><i class="icon icon-lg">info</i>&nbsp;账户信息</p>
 									</div>
-									<{if $oo->get_enable()}>
+									<{if $oo->get_enable()==1}>
 										<p>打死也不能让别人知道哦 >_<</p>
 										<p>状态:正常</p>
 										<p>
