@@ -39,7 +39,7 @@
 										</div>
 									</div>
 								</div>
-								<{if $oo->get_enable()==0 || $oo->get_enable()==3}>
+								<{if $oo->get_enable()==0}>
 									<div class="card card-red">
 										<div class="card-main">
 											<div class="card-inner">
@@ -130,7 +130,7 @@
 										</div>
 									</div>
 								</div>
-								<{if $oo->get_enable()==0 || $oo->get_enable()==3}>
+								<{if $oo->get_enable()==0}>
 									<div class="card card-red">
 										<div class="card-main">
 											<div class="card-inner">
