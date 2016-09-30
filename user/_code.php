@@ -78,6 +78,9 @@ if (isset($_GET['method'])){
 		                    }
                         $info ='成功！<br>您已修改为普通节点无限流量套餐！<br>到期日期：<code>'.date('Y-m-d H:i:s', $UserInfo->get_plan_end_time()).'</code>';
                         break;
+	if ($oo->get_enable() == 0){
+		$UserInfo->set_enable(1);
+	}
                     case 'M'://钱
                         $UserInfo->AddMoney($plan['data']);
                         $info = '兑换成功<br>当前账户余额为： <code>'.$UserInfo->Money().'</code> 喵币';
