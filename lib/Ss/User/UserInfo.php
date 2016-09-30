@@ -83,7 +83,6 @@ class UserInfo {
     function ChangePlan($plan){
         $this->db->update("user",[
             "plan"=>$plan,
-			"enable" => '1',
             ],[
                 "uid"=>$this->uid
             ]);
