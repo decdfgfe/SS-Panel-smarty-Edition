@@ -49,13 +49,6 @@ define('DB_TYPE','mysql');
  * 下面的东西根据需求修改
  */
 
-// SQLite 数据库目录和名称信息
-//
-//请把 sqliteFileDir sqliteFileName 都修改为任意内容
-//
-define('SQLITEDIR','SQLITEDIR-'.hash('sha256',"asswecan"));
-define('SQLITEDB','SQLITEDB-'.hash('sha256',"asswecan").".tpl");
-
 //define Plan
 //注册用户的初始化流量
 //默认5GiB
