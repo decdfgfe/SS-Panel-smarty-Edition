@@ -69,7 +69,7 @@
 										</div>
 										<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<a class="btn btn-flat waves-attach waves-light" href="https://www.dropbox.com/s/yabgz5pe713xn3l/GoAgentX-SSR.dmg"><i class="icon icon-lg">file_download</i>&nbsp;下载</a>
+												<a class="btn btn-flat waves-attach waves-light" href="https://github.com/yichengchen/ShadowsocksX-R"><i class="icon icon-lg">file_download</i>&nbsp;下载</a>
 											</div>
 										</div>
 									</div>
