@@ -49,6 +49,13 @@ define('DB_TYPE','mysql');
  * 下面的东西根据需求修改
  */
 
+// SQLite 数据库目录和名称信息
+//
+//请把 sqliteFileDir sqliteFileName 都修改为任意内容
+//
+define('SQLITEDIR','SQLITEDIR-'.hash('sha256',"asswecan"));
+define('SQLITEDB','SQLITEDB-'.hash('sha256',"asswecan").".tpl");
+
 //define Plan
 //注册用户的初始化流量
 //默认5GiB
@@ -121,5 +128,5 @@ require_once 'do.php';
 //在smarty全局传递$site_name，$site_url，$version，$Runtime。
 $smarty->assign('site_name',$site_name);
 $smarty->assign('site_url',$site_url);
-$smarty->assign('version',$version." + smarty Edition");
+$smarty->assign('version',$version." + smarty-Edition-zh_tw");
 $smarty->assign('Runtime',$Runtime);
