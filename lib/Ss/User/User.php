@@ -117,9 +117,10 @@ error_reporting(E_ALL);
          ]);
      }
      
-
+     function get_all_user_ip(){
+        return $this->db -> select('login_ip', '*');
+     }
      
-
  }
  
  
