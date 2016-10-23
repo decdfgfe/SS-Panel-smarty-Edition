@@ -37,7 +37,8 @@ if (isset($_GET['method'])){
                     	$UserInfo->update_transfer($user_info['transfer_enable']+$plan['data']*1024*1024*1024);
 						$UserInfo->update_plan_go_time(365);
 		    			}
-						
+					    if ($oo->get_enable() == 0){
+		                    $UserInfo->set_enable(1);
                         $info ='兑换成功！<br>您成功添加了'.$plan['data'].'GB的流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB';
                         break;
                         
@@ -53,6 +54,8 @@ if (isset($_GET['method'])){
                         $UserInfo->update_transfer($user_info['transfer_enable']+$plan['data']*1024*1024*1024);
 						$UserInfo->update_plan_go_time(365);
 						}
+					    if ($oo->get_enable() == 0){
+		                    $UserInfo->set_enable(1);
                         $info ='兑换成功！<br>您可以使用'.$plan['data'].'GB的高级节点流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB<br>流量用完后自动回归免费账号并获得10GB流量';
                         break;
                         
@@ -65,6 +68,8 @@ if (isset($_GET['method'])){
 						else{
 						$UserInfo->update_plan_end_time($plan['data']);
 						}
+					    if ($oo->get_enable() == 0){
+		                    $UserInfo->set_enable(1);
 						$info ='成功！<br>您已修改为高级节点无限流量套餐！<br>到期日期：<code>'.date('Y-m-d H:i:s', $UserInfo->get_plan_end_time()).'</code>';
 						break;
                     case 'Cc'://普通周期
@@ -75,12 +80,12 @@ if (isset($_GET['method'])){
                         }
 		                else{
                         $UserInfo->update_plan_end_time($plan['data']);
-		                    }
+		                }
+					    if ($oo->get_enable() == 0){
+		                    $UserInfo->set_enable(1);
                         $info ='成功！<br>您已修改为普通节点无限流量套餐！<br>到期日期：<code>'.date('Y-m-d H:i:s', $UserInfo->get_plan_end_time()).'</code>';
                         break;
-	if ($oo->get_enable() == 0){
-		$UserInfo->set_enable(1);
-	}
+	                    }
                     case 'M'://钱
                         $UserInfo->AddMoney($plan['data']);
                         $info = '兑换成功<br>当前账户余额为： <code>'.$UserInfo->Money().'</code> 喵币';
