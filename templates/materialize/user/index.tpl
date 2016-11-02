@@ -42,6 +42,7 @@
 									<div class="text-center">
 										<p class="card-heading"><i class="icon icon-lg">error_outline</i>&nbsp;公告</p>
 									</div>
+									<{$oo->get_message()}>
 									<{$notice->notice('user_home')}>
 								</div>
 							</div>
