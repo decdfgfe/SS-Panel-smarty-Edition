@@ -25,7 +25,7 @@ error_reporting(E_ALL);
         return $datas;
      }
 
-     function updateUser($name,$email,$pass,$passwd,$transfer_enable,$invite_num,$plan,$enable,$plan_end_time){
+     function updateUser($name,$email,$pass,$passwd,$transfer_enable,$invite_num,$plan,$enable,$plan_end_time,$message){
          return $this->db->update($this->table,[
              "user_name" => $name,
              "email" => $email,
@@ -36,6 +36,7 @@ error_reporting(E_ALL);
              "enable" => $enable,
              "plan"=> $plan,
              "plan_end_time"=>$plan_end_time,
+			 "message"=>$message,
          ],[
              "uid" => $this->uid
          ]);
