@@ -150,10 +150,12 @@
 											<p>套餐到期时间:<span class="label label-brand-accent margin-right"><{date( 'Y-m-d H:i:s',$oo->get_plan_end_time())}></span></p>
 										<{/if}>
 									<{else}>
-										<{if $oo->get_plan_end_time()<1451577600}>
+										<{if $oo->get_enable()==0}>
 											<p>状态:停止</p>
+											<p>您的帐户由于服务到期或尚未开通被停止服务，请在商店付费购买服务。</p>
 										<{else}>
-											<p>您因为7天内没有签到，账号已经被暂停，请购买任意套餐即可开通~</p>
+										    <p>狀態:停止</p>
+											<p>您的帐户由于滥用被封禁，请联系管理员。</p>
 										<{/if}>
 									<{/if}>
 								</div>
