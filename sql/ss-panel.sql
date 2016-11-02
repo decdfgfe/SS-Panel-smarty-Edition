@@ -221,6 +221,7 @@ CREATE TABLE `user` (
   `money` decimal(12,2) NOT NULL,
   `ref_by` int(11) NOT NULL DEFAULT '0',
   `plan_end_time` bigint(11) NOT NULL
+  `message` mediumtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
