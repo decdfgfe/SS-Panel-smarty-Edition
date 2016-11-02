@@ -282,6 +282,11 @@
 			<div class="text-center">
 				<div class="modal-inner" id="qrcode"></div>
 			</div>
+			<div class="text-center">
+				<a href="" target="_blank" class="ssrlink">点击添加配置文件（需客户端支持）</p>
+			</div>
+			</hr>
+			
 		</div>
 	</div>
 </div>
@@ -301,7 +306,7 @@ p = new Ping();
         p.ping(url, function(data){
             if ($('#'+ping_id).html() == 'Ping')
                 {
-                    $('#'+ping_id).html('请稍后');
+                    $('#'+ping_id).html('请稍候');
                     ping_result(ping_id, url);
                 }
             else
@@ -364,7 +369,8 @@ p = new Ping();
         ssurl=$(this).attr('value');
         $('#qrcode').html('<img src="../code/api.php?text='+ssurl+'" height="250px" width ="250px"\>');
         $('#node_qr').modal();
-        });
+        $('.ssrlink').attr('href',ssurl);
+	});
 </script>
 <script type="text/javascript">
     $(document).ready(function(){
