@@ -35,6 +35,21 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-sm-12">
+				    <{if $oo->get_message()==''}>
+					<{else}>
+						<div class="col-lg-12 col-sm-12">
+							<div class="card">
+								<div class="card-main">
+									<div class="card-inner">
+										<div class="text-center">
+											<p class="card-heading"><i class="icon icon-lg">chat</i>&nbsp;<{$GetUserName}>的通知</p>
+										</div>
+										<{$oo->get_message()}>
+									</div>
+								</div>
+							</div>
+						</div>
+                    <{/if}>
 					<div class="col-lg-12 col-sm-12">
 						<div class="card">
 							<div class="card-main">
@@ -42,7 +57,6 @@
 									<div class="text-center">
 										<p class="card-heading"><i class="icon icon-lg">error_outline</i>&nbsp;公告</p>
 									</div>
-									<{$oo->get_message()}>
 									<{$notice->notice('user_home')}>
 								</div>
 							</div>
