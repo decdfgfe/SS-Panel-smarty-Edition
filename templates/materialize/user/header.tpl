@@ -83,7 +83,7 @@
 			</div>
 		</div>
 	</div>
-	<script>
+	<!--script>
 	    var msg = $('#pop_msg').html;
 	    if(msg.length != 0) $('#pop_up').modal();
 	    $("#disable").click(function(){
@@ -91,4 +91,4 @@
 	        expdate.setTime(expdate.getTime() + 7 * 24 * 60 * 60 * 1000);
 	        document.cookie = "msg" + "=" + msg + ";expires="+expdate.toGMTString()+";path=/";
 	   });
-	</script>
+	</script-->
