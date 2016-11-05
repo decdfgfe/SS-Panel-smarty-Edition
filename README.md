@@ -1,13 +1,16 @@
 A simple front-end of [Shadowsocks manyuser](https://github.com/breakwa11/shadowsocks/tree/manyuser).
 This Version is based on xuanhuan's [SS-Panel-smarty](https://github.com/xuanhuan/ss-panel).
 
-If there is no serious Bug, then this version will not continue to update the.Please
+If there is no serious Bug, then this version will not continue to update the.
+
 如果没有严重的Bug的话，那么这个版本应该不会再继续更新了。
 
 Please check our new project [Ahref-Group/SuperPanel](https://github.com/Ahref-Group/SuperPanel).
+
 请移步到我们的新项目[Ahref-Group/SuperPanel](https://github.com/Ahref-Group/SuperPanel).
 
 Great thanks to [kot4ri](https://zankyo.cc/) xiaoxin and others for their help with fixing bugs and updating functions.
+
 炒鸡感谢 [kot4ri](https://zankyo.cc/) xiaoxin 两位大佬不停的给我们这个版本修复Bug和更新内容！！
 SS-Panel-smarty-Edition
 ========
