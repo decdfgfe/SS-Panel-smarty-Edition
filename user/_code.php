@@ -112,11 +112,11 @@ if (isset($_GET['method'])){
                         $plan['plan'] = 'B';
                         break;
                     case 'Ca':
-                        $info='本兑换码包含：高级用戶，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
+                        $info='本兑换码包含：高级用户，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
                         $plan['plan'] = 'E';
                         break;
                     case 'Cc':
-                        $info='本兑换码包含：普通用戶，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
+                        $info='本兑换码包含：普通用户，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
                         $plan['plan'] = 'C';
                         break;
                     case 'M':
@@ -131,7 +131,7 @@ if (isset($_GET['method'])){
             }
         }
         else{
-            echo json_encode(array('status'=>'invalid', 'info'=>无效的兑换码，请检查！'));
+            echo json_encode(array('status'=>'invalid', 'info'=>'无效的兑换码，请检查！'));
             exit;
         }
         
