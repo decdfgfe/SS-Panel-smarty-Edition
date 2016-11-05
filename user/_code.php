@@ -37,9 +37,10 @@ if (isset($_GET['method'])){
                     	$UserInfo->update_transfer($user_info['transfer_enable']+$plan['data']*1024*1024*1024);
 						$UserInfo->update_plan_go_time(365);
 		    			}
-					    if ($oo->get_enable() == 0){
-		                    $UserInfo->set_enable(1);
-                        $info ='兑换成功！<br>您成功添加了'.$plan['data'].'GB的流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB';
+			            if ($oo->get_enable() == 0){
+                            $UserInfo->set_enable(1);
+                        }
+                        $info ='兑换成功！<br>您成功添加了'.$plan['data'].'GB的普通节点流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB<br>流量用完后自动回归免费帐号并获得2GB流量';
                         break;
                         
                     case 'Ta'://高级流量
@@ -54,9 +55,10 @@ if (isset($_GET['method'])){
                         $UserInfo->update_transfer($user_info['transfer_enable']+$plan['data']*1024*1024*1024);
 						$UserInfo->update_plan_go_time(365);
 						}
-					    if ($oo->get_enable() == 0){
-		                    $UserInfo->set_enable(1);
-                        $info ='兑换成功！<br>您可以使用'.$plan['data'].'GB的高级节点流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB<br>流量用完后自动回归免费账号并获得10GB流量';
+			            if ($oo->get_enable() == 0){
+                            $UserInfo->set_enable(1);
+                        }
+                        $info ='兑换成功！<br>您成功添加了'.$plan['data'].'GB的高级节点流量<br>当前流量：'.$UserInfo->get_transfer()/1073741824.0.' GB<br>流量用完后自动回归免费帐号并获得2GB流量';
                         break;
                         
                     case 'Ca'://高级周期
@@ -68,8 +70,9 @@ if (isset($_GET['method'])){
 						else{
 						$UserInfo->update_plan_end_time($plan['data']);
 						}
-					    if ($oo->get_enable() == 0){
-		                    $UserInfo->set_enable(1);
+						if ($oo->get_enable() == 0){
+                            $UserInfo->set_enable(1);
+                        }
 						$info ='成功！<br>您已修改为高级节点无限流量套餐！<br>到期日期：<code>'.date('Y-m-d H:i:s', $UserInfo->get_plan_end_time()).'</code>';
 						break;
                     case 'Cc'://普通周期
@@ -81,11 +84,11 @@ if (isset($_GET['method'])){
 		                else{
                         $UserInfo->update_plan_end_time($plan['data']);
 		                }
-					    if ($oo->get_enable() == 0){
-		                    $UserInfo->set_enable(1);
+			            if ($oo->get_enable() == 0){
+                            $UserInfo->set_enable(1);
+                        }
                         $info ='成功！<br>您已修改为普通节点无限流量套餐！<br>到期日期：<code>'.date('Y-m-d H:i:s', $UserInfo->get_plan_end_time()).'</code>';
                         break;
-	                    }
                     case 'M'://钱
                         $UserInfo->AddMoney($plan['data']);
                         $info = '兑换成功<br>当前账户余额为： <code>'.$UserInfo->Money().'</code> 喵币';
@@ -98,7 +101,7 @@ if (isset($_GET['method'])){
             elseif($method == 'test'){
                 $current_plan = $UserInfo->get_plan();
                 $plan = $Plan -> get_plan($ret['plan'], $ret['plan_id']);
-                $info = '兑换码到期时间：<code>'.date('Y-m-d H:i:s', $ret['time']).'</code>';
+                $info = '兑换码到期時間：<code>'.date('Y-m-d H:i:s', $ret['time']).'</code>';
                 switch ($plan['type']) {
                     case 'Ta':
                         $info = '本兑换码包含：高级流量'.$plan['data'].'GB<br>价值为：'.$plan['money'].'喵币';
@@ -109,11 +112,11 @@ if (isset($_GET['method'])){
                         $plan['plan'] = 'B';
                         break;
                     case 'Ca':
-                        $info='本兑换码包含：高级用户，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
+                        $info='本兑换码包含：高级用戶，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
                         $plan['plan'] = 'E';
                         break;
                     case 'Cc':
-                        $info='本兑换码包含：普通用户，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
+                        $info='本兑换码包含：普通用戶，不限流量<br>使用期限：'.$plan['data'].'天<br>价值为：'.$plan['money'].'喵币';
                         $plan['plan'] = 'C';
                         break;
                     case 'M':
@@ -122,13 +125,13 @@ if (isset($_GET['method'])){
                         break;
                 }
                 if ($current_plan != $plan['plan'])
-                    $info .= '<br><span style="color:red;">您现在的计划类型与您要兑换的不同，继续兑换将覆盖原有计划，请谨慎操作！</span>';
+                    $info .= '<br><span style="color:red;">您现在的计划类型与您要兑换的不同，继续兑换将覆盖原有计划。即使您再次兑换原有计划流量也会重新计算。请谨慎操作！</span>';
                 echo json_encode(array('status'=>'success', 'info'=>$info));
                 exit;
             }
         }
         else{
-            echo json_encode(array('status'=>'invalid', 'info'=>'无效的兑换码，请检查！'));
+            echo json_encode(array('status'=>'invalid', 'info'=>无效的兑换码，请检查！'));
             exit;
         }
         
