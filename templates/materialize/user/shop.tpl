@@ -27,7 +27,7 @@
 					</div>
 				</div>
 				<div class="col-lg-12 col-sm-12">
-					<h2 class="content-sub-heading"></h2>
+					<h2 class="content-sub-heading">周期套餐</h2>
 					<div class="card">
 						<div class="card-main">
 							<div class="card-inner">
