@@ -99,7 +99,7 @@
 										</div>
 										<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<a class="btn btn-flat waves-attach waves-light" href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8"><i class="icon icon-lg">file_download</i>&nbsp;下载</a>
+												<a class="btn btn-flat waves-attach waves-light" href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8"><i class="icon icon-lg">file_download</i>&nbsp;下載</a>
 											</div>
 										</div>
 									</div>
@@ -112,4 +112,4 @@
 		</div>
 	</main>
 </body>
-<{include file='footer.tpl'}>
+<p><{include file='footer.tpl'}></p>
