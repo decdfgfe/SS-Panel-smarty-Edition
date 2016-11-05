@@ -1,8 +1,13 @@
-A simple front-end of [Shadowsocks manyuser](https://github.com/mengskysama/shadowsocks/tree/manyuser).
+A simple front-end of [Shadowsocks manyuser](https://github.com/breakwa11/shadowsocks/tree/manyuser).
 This Version is based on xuanhuan's [SS-Panel-smarty](https://github.com/xuanhuan/ss-panel).
 
-Great thanks to [kot4ri](https://zankyo.cc/) xiaoxin and others for their help with fixing bugs and updating functions.
+If there is no serious Bug, then this version will not continue to update the.Please
+如果没有严重的Bug的话，那么这个版本应该不会再继续更新了。
 
+Please check our new project [Ahref-Group/SuperPanel](https://github.com/Ahref-Group/SuperPanel).
+请移步到我们的新项目[Ahref-Group/SuperPanel](https://github.com/Ahref-Group/SuperPanel).
+
+Great thanks to [kot4ri](https://zankyo.cc/) xiaoxin and others for their help with fixing bugs and updating functions.
 炒鸡感谢 [kot4ri](https://zankyo.cc/) xiaoxin 两位大佬不停的给我们这个版本修复Bug和更新内容！！
 SS-Panel-smarty-Edition
 ========
@@ -17,6 +22,9 @@ Please edit the file `/lib/config-sample.php` upon your own need, when you finis
 
 Please make sure that `lib/Ss` has the permission to read & write. If not, please set it for convenience. <br/>
 请确保目录 `lib/Ss` 有读写权限，如果没有请改一下。
+
+Please rename the`/tools`, or you may be reset to another malicious.<br/>
+请重命名`/tools`，否则可能被他人恶意重置流量。
 
 Add SSR support, when the node is added if the agreement and confusion for the original or not, then the output SS QRCode. <br/>
 添加SSR支持，添加节点时若协议和混淆为原版或不填写，则输出SS二维码。
