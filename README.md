@@ -23,8 +23,11 @@ This edition requires Chrome or FireFox for compatible functioning and surfing. 
 Please edit the file `/lib/config-sample.php` upon your own need, when you finished, rename the file to `/lib/config.php`. Set `$site_url` as your website address, and be sure that it contains a `/` at the end of your URL. <br/>
 请按需修改 `/lib/config-sample.php` 的设置，然后把文件重命名成 `/lib/config.php`。注意在填写网站网址`$site_url`的时候在结尾加一个 `/`。
 
-Please make sure that `lib/Ss` has the permission to read & write. If not, please set it for convenience. <br/>
-请确保目录 `lib/Ss` 有读写权限，如果没有请改一下。
+Please rename the `/lib/Ss/Code/config-sample.php` to `/lib/Ss/Code/config.php`.
+请重命名 `/lib/Ss/Code/config-sample.php` 为 `/lib/Ss/Code/config.php`。
+
+Please make sure that `/lib/Ss` has the permission to read & write. If not, please set it for convenience. <br/>
+请确保目录 `/lib/Ss` 有读写权限，如果没有请改一下。
 
 Please rename the`/tools`, or you may be reset to another malicious.<br/>
 请重命名`/tools`，否则可能被他人恶意重置流量。
