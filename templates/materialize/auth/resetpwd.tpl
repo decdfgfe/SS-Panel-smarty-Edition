@@ -36,7 +36,7 @@
 							<div class="card-inner">
 								<p class="text-center">
 									<span class="avatar avatar-inline avatar-lg">
-										<img alt="Login" src="https://avatar.duoshuo.com/avatar-50/760/144058.jpg">
+										<img alt="Login" src="https://github.com/Ahref-Group/SS-Panel-smarty-Edition/raw/smarty/templates/materialize/images/users/avatar-002.jpg">
 									</span>
 								</p>
 								<form action="javascript:void(0);" autocomplete="off" method="POST">
