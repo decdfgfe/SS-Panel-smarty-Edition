@@ -11,6 +11,8 @@ $node1 = $node->NodesArray(1); // Pro节点数组
 foreach ($node0 as &$node_info) {
     $node_info['qr'] = get_ss_url($node_info['id']);
 }
+
+
 foreach ($node1 as &$node_info) {
     $node_info['qr'] = get_ss_url($node_info['id']);
 }
@@ -23,14 +25,23 @@ $smarty->assign('node1',$node1);
 $varsarray = get_defined_vars();
 $smarty->display('user/node.tpl');
 
+
+//加了个base64_url_encode(来自v3魔改版)
+function base64_url_encode($input){
+	return strtr(base64_encode($input), array('+' => '-', '/' => '_', '=' => ''));
+}
+
 function get_ss_url($id){
     $node = new \Ss\Node\NodeInfo($id);
     global $oo;
+	$name =  $node->Name();
     $server =  $node->Server();
     $method = $node->Method();
 	$protocol = $node->protocol(); //protocol
 	$obfs = $node->obfs(); //obfs
-	$parameter = $node->parameter(); //protocol_param
+	$parameter = $node->parameter(); //obfs_param
+	$protoparam = '';
+
 	
     $pass = $oo->get_pass();
     $port = $oo->get_port();
@@ -47,9 +58,12 @@ function get_ss_url($id){
 		if ($protocol == 'origin' or $protocol == ''){
 		$protocol =  "origin";
         }
-		//ssr://base64(host:port:protocol:method:obfs:base64pass/?obfsparam=base64&remarks=base64&group=base64&udpport=0&uot=1)
-        $ssurl =  $server.":".$port.":".$protocol.":".$method.":".$obfs.":".base64_encode($pass)."/?obfsparam=".base64_encode($parameter)."&remarks=".base64_encode($server)."&group=".base64_encode('')."&udpport=0&uot=1";
-    	return "ssr://".base64_encode($ssurl);
+		
+//具体格式: ssr://base64(host:port:protocol:method:obfs:base64pass/?obfsparam=base64param&protoparam=base64param&remarks=base64remarks&group=base64group&udpport=0&uot=0)
+       $ssurl = $server.":".$port.":".$protocol.":".$method.":".$obfs.":".base64_url_encode($pass)."/?obfsparam=".base64_url_encode($parameter)."&protoparam=".base64_url_encode($protoparam)."&remarks=".base64_url_encode($name)."&group=".base64_url_encode('Groupname');
+
+    	return "ssr://".base64_url_encode($ssurl);
+
     }
 	
 	
