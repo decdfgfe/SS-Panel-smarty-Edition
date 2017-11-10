@@ -150,6 +150,9 @@
 											<div style="font-size:20px">
 												<p>端口:<span class="label label-brand-accent margin-right info"><{$oo->get_port()}></span></p>
 												<p>密码:<span class="label label-brand-accent margin-right info"><{$oo->get_pass()}></span></p>
+												<p>协议:<span class="label label-brand-accent margin-right info"><{$oo->get_protocol()}></span></p>
+												<p>密码:<span class="label label-brand-accent margin-right info"><{$oo->get_obfs()}></span></p>
+												<p>算法:<span class="label label-brand-accent margin-right info"><{$oo->get_method()}></span></p>
 											</div>
 										</p>
 										<{if $oo->get_plan()==A}>
