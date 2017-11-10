@@ -19,18 +19,6 @@ class NodeInfo extends \Ss\Etc\Db {
     function Server(){
         return $this->NodeArray()['node_server'];
     }
-
-    function Method(){
-        return $this->NodeArray()['node_method'];
-    }
-	
-	function protocol(){
-        return $this->NodeArray()['protocol'];
-    }
-	
-	function obfs(){
-        return $this->NodeArray()['obfs'];
-    }
 	
 	function parameter(){
         return $this->NodeArray()['parameter'];
@@ -42,17 +30,14 @@ class NodeInfo extends \Ss\Etc\Db {
         ]);
     }
 
-    function Update($node_name,$node_type,$node_server,$node_method,$node_info,$node_status,$node_order,$protocol,$obfs,$parameter){
+    function Update($node_name,$node_type,$node_server,$node_info,$node_status,$node_order,$parameter){
         $this->db->update("ss_node", [
             "node_name" => $node_name,
             "node_type" => $node_type,
             "node_server" => $node_server,
-            "node_method" => $node_method,
             "node_info" => $node_info,
             "node_status" => $node_status,
             "node_order" =>  $node_order,
-			"protocol" =>  $protocol,
-			"obfs" =>  $obfs,
 			"parameter" =>  $parameter
         ],[
             "id[=]"  => $this->id
