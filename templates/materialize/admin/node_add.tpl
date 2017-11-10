@@ -101,13 +101,10 @@
                     node_id: "<{$id}>",
                     node_name: $("#node_name").val(),
                     node_server: $("#node_server").val(),
-                    node_method: $("#node_method").val()=="custom_node_method" ? $("#custom_node_method").val() : $("#node_method").val(),
                     node_info: $("#node_info").val(),
                     node_type: $("#node_type").val(),
                     node_status: $("#node_status").val(),
                     node_order: $("#node_order").val(),
-					protocol: $("#protocol").val(),
-					obfs: $("#obfs").val(),
 					parameter: $("#parameter").val()
                 },
                 success:function(data){
@@ -128,14 +125,4 @@
             })
         })
     })
-    function changeForm(value){
-     if(value=="custom_node_method") {
-         $('#custom_node_method_form').show(200);
-         $('#custom_node_method_form').focus();
-         $('#custom_node_method_form').select();
-     }else{
-         $('#custom_node_method_form').hide(200);
-     }
-   }
-    window.onload = changeForm($("#node_method").val());
 </script>
