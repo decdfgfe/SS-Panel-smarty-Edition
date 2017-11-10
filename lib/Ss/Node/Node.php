@@ -21,17 +21,14 @@ namespace Ss\Node;
          return $node_array;
      }
 
-     function Add($node_name,$node_type,$node_server,$node_method,$node_info,$node_status,$node_order,$protocol,$obfs,$parameter){
+     function Add($node_name,$node_type,$node_server,$node_info,$node_status,$node_order,$parameter){
          $this->db->insert("ss_node", [
              "node_name" => $node_name,
              "node_type" => $node_type,
              "node_server" => $node_server,
-             "node_method" => $node_method,
              "node_info" => $node_info,
              "node_status" => $node_status,
              "node_order" =>  $node_order,
-			 "protocol" =>  $protocol,
-			 "obfs" =>  $obfs,
 			 "parameter" =>  $parameter
          ]);
          return 1;
