@@ -46,8 +46,20 @@
 											<input class="form-control" id="user_pass" type="text">
 										</div>
 										<div class="form-group form-group-label">
-											<label class="floating-label" for="user_passwd">Shadowsocks 连接密码</label>
+											<label class="floating-label" for="user_passwd">连接密码</label>
 											<input class="form-control" id="user_passwd" type="text" value="<{$rs['passwd']}>">
+										</div>
+										<div class="form-group form-group-label">
+											<label class="floating-label" for="user_passwd">协议</label>
+											<input class="form-control" id="user_protocol" type="text" value="<{$rs['protocol']}>">
+										</div>
+										<div class="form-group form-group-label">
+											<label class="floating-label" for="user_passwd">混淆</label>
+											<input class="form-control" id="user_obfs" type="text" value="<{$rs['obfs']}>">
+										</div>
+										<div class="form-group form-group-label">
+											<label class="floating-label" for="user_passwd">加密</label>
+											<input class="form-control" id="user_method" type="text" value="<{$rs['method']}>">
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-12 col-sm-12">
@@ -68,7 +80,7 @@
 											<input class="form-control" id="plan_end_time" type="text"  onclick="$('#plan_end_time').pickdate();" value="<{date('Y-m-d',$rs['plan_end_time'])}>">
 										</div>
 										<div class="form-group form-group-label">
-											<label class="floating-label" for="message">用戶獨立通知</label>
+											<label class="floating-label" for="message">用戶独立通知</label>
 											<textarea class="form-control textarea-autosize" id="message" type="text" ><{$rs['message']}></textarea>
 										</div>
 										<div class="checkbox switch">
@@ -126,6 +138,9 @@ $(document).ready(function(){
                 user_pass: Aes.Ctr.encrypt($("#user_pass").val(), "<{$randomChar}>", 256),
                 user_pass_hidden: "<{$rs['pass']}>",
                 user_passwd: Aes.Ctr.encrypt($("#user_passwd").val(), "<{$randomChar}>", 256),
+				user_protocol: $("#user_protocol").val(),
+				user_obfs: $("#user_obfs").val(),
+				user_method: $("#user_method").val(),
 				transfer_enable: $("#transfer_enable").val(),
 				plan: $("#plan").val(),
                 transfer_enable_hidden: "<{\Ss\Etc\Comm::flowAutoShow($rs['transfer_enable'])}>",
