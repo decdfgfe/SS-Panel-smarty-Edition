@@ -5,19 +5,15 @@ require_once '_main.php';
 
 //更新
 if(!empty($_POST)){
-    $node_id       = $_POST['node_id'];
     $node_name     = $_POST['node_name'];
     $node_type     = $_POST['node_type'];
     $node_server   = $_POST['node_server'];
-    $node_method   = $_POST['node_method'];
     $node_info     = $_POST['node_info'];
     $node_status   = $_POST['node_status'];
     $node_order    = $_POST['node_order'];
-    $protocol    = $_POST['protocol'];
-	$obfs    = $_POST['obfs'];
 	$parameter    = $_POST['parameter'];
     $node = new \Ss\Node\NodeInfo($node_id);
-    $query = $node->Update($node_name,$node_type,$node_server,$node_method,$node_info,$node_status,$node_order,$protocol,$obfs,$parameter);
+    $query = $node->Update($node_name,$node_type,$node_server,$node_info,$node_status,$node_order,$parameter);
     if($query){
         $ue['code'] = '1';
         $ue['ok'] = '1';
