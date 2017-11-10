@@ -36,9 +36,9 @@ function get_ss_url($id){
     global $oo;
 	$name =  $node->Name();
     $server =  $node->Server();
-    $method = $node->Method();
-	$protocol = $node->protocol(); //protocol
-	$obfs = $node->obfs(); //obfs
+    $method = $oo->get_Method();
+	$protocol = $oo->get_protocol(); //protocol
+	$obfs = $oo->get_obfs(); //obfs
 	$parameter = $node->parameter(); //obfs_param
 	$protoparam = '';
 
