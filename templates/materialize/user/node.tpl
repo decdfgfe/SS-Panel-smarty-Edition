@@ -71,19 +71,16 @@
 															<a href="javascript:void(0)" class="dropdown-toggle text-black waves-attach" data-toggle="dropdown"><i class="icon icon-lg">network_wifi</i>&nbsp;详细信息</a>
 															<ul class="dropdown-menu">
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;节点地址：<{$row['node_server']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;伺服器地址：<{$row['node_server']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;节点状态：<{$row['node_status']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;伺服器状态：<{$row['node_status']}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密方式：<{$row['node_method']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密方式：<{$oo->get_method()}></a>
 																</li>
 																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">compare_arrows</i>&nbsp;SSR协议：<{$row['protocol']}></a>
-																</li>
-																<li>
-																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">cached</i>&nbsp;SSR混淆：<{$row['obfs']}></a>
+																    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;混淆协议：<{$oo->get_protocol()}>/<{$oo->get_obfs()}>/<{$row['parameter']}></a>
 																</li>
 															</ul>
 														</li>
@@ -155,20 +152,17 @@
 																<a class="dropdown-toggle text-black waves-attach" data-toggle="dropdown"><i class="icon icon-lg">network_wifi</i>&nbsp;详细信息</a>
 																<ul class="dropdown-menu">
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;节点地址：<{$row['node_server']}></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;伺服器地址：<{$row['node_server']}></a>
 																	</li>
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;节点状态：<{$row['node_status']}></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;伺服器状态：<{$row['node_status']}></a>
 																	</li>
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密算法：<{$row['node_method']}></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密方式：<{$oo->get_method()}></a>
 																	</li>
-																    <li>
-															    	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">compare_arrows</i>&nbsp;SSR协议：<{$row['protocol']}></a>
-															    	</li>
-															    	<li>
-															    	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">cached</i>&nbsp;SSR混淆：<{$row['obfs']}></a>
-																    </li>
+																	<li>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;混淆协议：<{$oo->get_protocol()}>/<{$oo->get_obfs()}>/<{$row['parameter']}></a>
+																	</li>
 																</ul>
 															</li>
 														</ul>
@@ -211,20 +205,17 @@
 																<a class="dropdown-toggle text-black waves-attach" data-toggle="dropdown"><i class="icon icon-lg">network_wifi</i>&nbsp;详细信息</a>
 																<ul class="dropdown-menu">
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;节点地址：<i class="icon icon-lg">visibility_off</i></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">location_on</i>&nbsp;伺服器地址：<i class="icon icon-lg">visibility_off</i></a>
 																	</li>
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;节点状态：<i class="icon icon-lg">visibility_off</i></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">device_hub</i>&nbsp;伺服器状态：<i class="icon icon-lg">visibility_off</i></a>
 																	</li>
 																	<li>
-																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密算法：<i class="icon icon-lg">visibility_off</i></a>
+																		<a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">security</i>&nbsp;加密方式：<i class="icon icon-lg">visibility_off</i></a>
 																	</li>
-																    <li>
-															    	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">compare_arrows</i>&nbsp;SSR协议：<i class="icon icon-lg">visibility_off</i></a>
-															    	</li>
-															    	<li>
-															    	    <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">cached</i>&nbsp;SSR混淆：<i class="icon icon-lg">visibility_off</i></a>
-																    </li>
+															        	<li>
+															        	     <a class="waves-attach" href="javascript:void(0)"><i class="icon icon-lg">lock_outline</i>&nbsp;混淆协议：<i class="icon icon-lg">visibility_off</i></a>
+															        	</li>
 																</ul>
 															</li>
 														</ul>
