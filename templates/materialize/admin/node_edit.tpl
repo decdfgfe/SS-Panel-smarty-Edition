@@ -127,16 +127,4 @@
             })
         })
     })
-    function changeForm(value){
-     if(value=="custom_node_method") {
-        $('#custom_node_method_form').show(200);
-        $('#custom_node_method_form').show(200);
-        $('#custom_node_method').focus();
-        $('#custom_node_method').select();
-     }else{
-         $('#custom_node_method_form').hide(200);
-         $('#custom_node_method_form').hide(200);
-     }
-   }
-    window.onload = changeForm($("#node_method").val());
 </script>
