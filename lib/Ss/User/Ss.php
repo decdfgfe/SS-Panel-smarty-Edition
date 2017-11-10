@@ -45,6 +45,21 @@ class Ss {
         return $this->get_user_info_array()['passwd'];
     }
 
+    //返回协议
+    function  get_protocol(){
+        return $this->get_user_info_array()['protocol'];
+    }
+
+    //返回混淆
+    function  get_obfs(){
+        return $this->get_user_info_array()['obfs'];
+    }
+	
+    //返回算法
+    function  get_method(){
+        return $this->get_user_info_array()['method'];
+    }
+
     //返回Plan
     function  get_plan(){
         return $this->get_user_info_array()['plan'];
